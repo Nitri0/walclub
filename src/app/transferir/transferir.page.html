@@ -1,15 +1,17 @@
-<ion-header>
+<ion-header class="header">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="title">
       ¿Cuánto quieres transferir?
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <p>Transferir a <strong>Daniela Aldea</strong></p>
-  <ion-input type="text" [(ngModel)]="amount" placeholder="$0"></ion-input>
-  <p>Tu saldo en pesos es: <strong>${{saldo}}</strong></p>
-  <ion-input type="text" [(ngModel)]="comentario" placeholder="Agrega un comentario"></ion-input>
-  <ion-button color="primary" (click)="transferir()">Transferir pesos</ion-button>
+<ion-content >
+  <div class="container">
+    <p>Transferir a <strong>Daniela Aldea</strong></p>
+    <ion-input class="cantidad" type="text" [(ngModel)]="amount" placeholder="$0"></ion-input>
+    <p>Tu saldo en pesos es: <strong>${{saldo}}</strong></p>
+    <ion-input class="comentario" type="text" [(ngModel)]="comentario" placeholder="Agrega un comentario"></ion-input>
+    <ion-button class="button-action" color="primary" (click)="transferir()">Transferir pesos</ion-button>
+  </div>
 </ion-content>
