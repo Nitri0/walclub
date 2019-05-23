@@ -16,30 +16,32 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="main-content">
-  <ion-grid class="saldo-info">
-    <ion-row>
-      <div> Daniela tienes:</div>
-    </ion-row>
-    <ion-row>
-      <h1>${{saldo}}</h1>
-    </ion-row>
-    <ion-row>
-      <div>Pesos Mi Club acumulados</div>
-    </ion-row>
-  </ion-grid>
-
-
+<ion-content>
   <ion-grid>
-    <ion-row>
-      <div>icon</div>
-      <div>Tienes <strong>1.280</strong> pesos por vencer el 24 de Mayo 2019</div>
-      <!-- <ion-col>icon</ion-col>
-      <ion-col>Tienes <strong>1.280</strong> pesos por vencer el 24 de Mayo 2019</ion-col> -->
-    </ion-row>
+    <div class="main-content">
+      <div class="saldo-info">
+        <ion-row>
+          <div class="user-title">Daniela tienes:</div>
+        </ion-row>
+        <ion-row>
+          <div class="saldo">
+            <h1>${{saldo}}</h1>
+          </div>
+        </ion-row>
+        <ion-row>
+          <div class="saldo">Pesos <strong>Mi Club</strong> acumulados</div>
+      </ion-row>
+       <ion-row>
+         <div class="expires">Tienes <strong>1.280</strong> pesos por vencer el 24 de Mayo 2019</div>
+        <!-- <ion-col>icon</ion-col>
+        <ion-col>Tienes <strong>1.280</strong> pesos por vencer el 24 de Mayo 2019</ion-col> -->
+      </ion-row>
+     </div> 
+   </div>
   </ion-grid>
-  <div>
-    <h1>Ùltimas Compras</h1>
+
+  <div class="last-points">
+    <div><h1 class="last">Ùltimas Compras</h1></div>
     <ion-list>
         <ion-item>
           <ion-label>Pokémon Yellow</ion-label>
@@ -52,5 +54,7 @@
         </ion-item>
       </ion-list>
   </div>
-  <ion-button color="primary" (click)="transferir()">Acumular pesos</ion-button>
+  <div class="btn"> 
+    <ion-button id="custom-wlm" color="primary" (click)="transferir()">Acumular pesos</ion-button>
+  </div>
 </ion-content>
