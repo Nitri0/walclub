@@ -18,11 +18,12 @@ export class Tab2Page {
   barcodeScannerOptions: BarcodeScannerOptions;
  
   constructor(private barcodeScanner: BarcodeScanner) {
-    this.encodeData = "https://www.FreakyJolly.com";
+    this.encodeData = "ads";
     //Options
     this.barcodeScannerOptions = {
       showTorchButton: true,
-      showFlipCameraButton: true
+      showFlipCameraButton: true,
+      prompt: "text example"
     };
   }
 
