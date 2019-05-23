@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: '', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
   { path: 'qr', loadChildren: './qr/qr.module#QrPageModule' },
+  { path: 'transferir', loadChildren: './transferir/transferir.module#TransferirPageModule' },
 ];
 @NgModule({
   imports: [

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ApiService } from './../services/api.service'
+import { ApiService } from '../services/api.service'
 
 @Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss']
+  selector: 'app-transferir',
+  templateUrl: 'transferir.page.html',
+  styleUrls: ['transferir.page.scss']
 })
-export class Tab3Page {
+export class TransferirPage {
   
   information = null;
   numberFrom = null;
